@@ -1,0 +1,128 @@
+
+/*Global Styles
+----------------*/
+body {
+    font-family: 'Truculenta' ;
+    margin:0;
+}
+h1{
+    font-size: 80px;
+    font-weight: 100;
+}
+h2{
+    font-size: 40px;
+}
+a{
+    color:lightskyblue ;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*Header and Footer
+------------------------------*/
+header, footer {
+background:linear-gradient(#8D99AE,#477947) darkslategray;
+color: white;
+}
+header h1, header h2{ 
+    color: #EDF2F4;
+}
+
+header>h1 {
+    text-transform: uppercase;
+}
+nav {
+    text-align: center;
+    top: 0px;
+    position: fixed;
+    background: black;
+    width: 100%;
+
+}
+/*Work Experience
+-----------------*/
+.work-column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+     float: left; 
+     margin: 0 
+}
+.work{
+    background:lightgreen ;
+}
+.work-column-container:hover{
+    background: rgba(0, 0, 0, .2);
+}
+.work h2::after {
+        content: "\2713";
+    }
+/*Education
+--------------------------*/
+.education{
+    background: #8D99AE;
+}
+.education-column-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    padding-top: 25px;
+    width: 200px;
+    height: auto;
+}
+@media screen and (max-width: 600px) {
+    .col-narrow {
+      width: 30%;
+      float: left;
+    }
+    .col-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 899px) {
+    .col-narrow{
+        width: auto;
+    }  
+}
+@media screen and (min-width: 900px) {
+    header {
+      text-align: center;
+    }
+    .profile-img {
+      width: 200px;
+    }
+  }
+
+  /*Animation
+  ------------------------------------------*/
+  @keyframes animate {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+  }
+
+  #home h1 {
+    animation-name: animate;
+    animation-duration: 7s;
+  }
+
+  #home h2:hover {
+    transform: scale(1.2);
+    
+  }
+
+
+
+
+
+
+
+
+
+
